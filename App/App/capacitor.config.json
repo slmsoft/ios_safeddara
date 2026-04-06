@@ -1,0 +1,17 @@
+{
+	"appId": "tj.safeddara.app",
+	"appName": "Safeddara",
+	"webDir": "dist",
+	"android": {
+		"allowMixedContent": true
+	},
+	"plugins": {
+		"CapacitorHttp": {
+			"enabled": true
+		}
+	},
+	"packageClassList": [
+		"AppPlugin",
+		"DevicePlugin"
+	]
+}
