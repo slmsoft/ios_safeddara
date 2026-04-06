@@ -17,6 +17,11 @@ open App/App.xcodeproj
 Дальше в Xcode: **Team**, **Signing**, выберите симулятор и нажмите **Run (▶)**.  
 Чтобы обновить веб-часть до последней версии, см. раздел про **`npm run build`** и **`npx cap sync ios`** из полного репозитория приложения.
 
+### Публикация в App Store
+
+Готовые тексты и таблицы для копирования в **App Store Connect** и **Apple Developer** (Safeddara, не другие приложения):  
+**[APP_STORE_CONNECT.md](./APP_STORE_CONNECT.md)**
+
 ---
 
 ## Что должно быть на компьютере
