@@ -1,8 +1,21 @@
 # Safeddara — iOS (Capacitor)
 
-Нативная оболочка **Safeddara** для **iPhone / iPad**. Внутри — веб-приложение (React/Vite), которое подставляется из папки `App/App/public` при сборке.
+**Репозиторий:** [github.com/slmsoft/ios_safeddara](https://github.com/slmsoft/ios_safeddara)
 
-> **Важно:** для App Store собирается не «APK» (это Android), а **архив Xcode** → загрузка в **App Store Connect** (получается **IPA** для распространения).
+Нативная оболочка **Safeddara** для **iPhone / iPad**. Внутри — веб-приложение (React/Vite), папка **`App/App/public`** (уже включена в репозиторий — можно открыть Xcode сразу после клона).
+
+> **Важно:** для App Store собирается не «APK» (это Android), а **архив Xcode** → загрузка в **App Store Connect** (сборка **IPA** / TestFlight).
+
+### Самый быстрый путь (уже есть Mac и Xcode)
+
+```bash
+git clone https://github.com/slmsoft/ios_safeddara.git
+cd ios_safeddara
+open App/App.xcodeproj
+```
+
+Дальше в Xcode: **Team**, **Signing**, выберите симулятор и нажмите **Run (▶)**.  
+Чтобы обновить веб-часть до последней версии, см. раздел про **`npm run build`** и **`npx cap sync ios`** из полного репозитория приложения.
 
 ---
 
