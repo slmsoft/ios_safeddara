@@ -11,11 +11,21 @@
 ```bash
 git clone https://github.com/slmsoft/ios_safeddara.git
 cd ios_safeddara
-open App/App.xcodeproj
+npm install
 ```
 
-Дальше в Xcode: **Team**, **Signing**, выберите симулятор и нажмите **Run (▶)**.  
-Чтобы обновить веб-часть до последней версии, см. раздел про **`npm run build`** и **`npx cap sync ios`** из полного репозитория приложения.
+Дальше одно из двух:
+
+- **Только обновить нативные зависимости / SwiftPM** (в `App/App/public` уже есть собранный веб из репозитория):  
+  `npm run sync:native`  
+  затем `open App/App.xcodeproj`
+
+- **Полная синхронизация** (нужна папка `dist/` с билдом — см. полный репозиторий приложения):  
+  `npm run sync`  
+  затем открыть Xcode.
+
+После этого в Xcode: **Team**, **Signing**, симулятор и **Run (▶)**.  
+Из монорепозитория приложения быстрее один раз: **`npm run ios:sync`** в корне (соберёт веб и заполнит `ios/dist`).
 
 ### Публикация в App Store
 

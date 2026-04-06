@@ -3,3 +3,5 @@ App/Pods
 App/output
 DerivedData
 xcuserdata
+node_modules/
+dist/

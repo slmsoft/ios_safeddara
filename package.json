@@ -1,0 +1,18 @@
+{
+  "name": "ios-safeddara",
+  "private": true,
+  "description": "Safeddara iOS (Capacitor). After clone: npm install && npm run sync, then open App/App.xcodeproj in Xcode.",
+  "scripts": {
+    "sync": "npx cap sync ios",
+    "sync:native": "npx cap update ios"
+  },
+  "dependencies": {
+    "@capacitor/app": "^8.0.1",
+    "@capacitor/core": "8.3.0",
+    "@capacitor/device": "^8.0.2"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "8.3.0",
+    "@capacitor/ios": "8.3.0"
+  }
+}

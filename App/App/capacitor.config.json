@@ -2,8 +2,8 @@
 	"appId": "tj.safeddara.app",
 	"appName": "Safeddara",
 	"webDir": "dist",
-	"android": {
-		"allowMixedContent": true
+	"ios": {
+		"path": "."
 	},
 	"plugins": {
 		"CapacitorHttp": {

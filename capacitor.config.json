@@ -1,0 +1,13 @@
+{
+  "appId": "tj.safeddara.app",
+  "appName": "Safeddara",
+  "webDir": "dist",
+  "ios": {
+    "path": "."
+  },
+  "plugins": {
+    "CapacitorHttp": {
+      "enabled": true
+    }
+  }
+}
