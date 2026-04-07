@@ -3,6 +3,7 @@
   "private": true,
   "description": "Safeddara iOS (Capacitor). After clone: npm install && npm run sync, then open App/App.xcodeproj in Xcode.",
   "scripts": {
+    "build": "node scripts/ios-repo-build-hint.js",
     "sync": "npx cap sync ios",
     "sync:native": "npx cap update ios"
   },

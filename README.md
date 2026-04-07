@@ -59,6 +59,8 @@ npm install
 
 ### Шаг 1. Клонировать **полный** репозиторий мобильного приложения
 
+> **Не путать с `ios_safeddara`:** если вы клонировали **только** [ios_safeddara](https://github.com/slmsoft/ios_safeddara), шаги с `npm run build` ниже **не для этой папки** — там нет Vite, веб уже в `App/App/public` (см. раздел «Самый быстрый путь» в начале README). Ошибка `Missing script: "build"` в терминале значит, что вы **не в корне полного** репозитория с `src/` и Vite.
+
 Репозиторий, где лежат `src/`, `capacitor.config.json`, `package.json` (у команды Safeddara это основной mono-repo приложения, не только папка `ios`).
 
 ```bash
