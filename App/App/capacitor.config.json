@@ -1,7 +1,7 @@
 {
 	"appId": "tj.safeddara.app",
 	"appName": "Safeddara",
-	"webDir": "dist",
+	"webDir": "public",
 	"backgroundColor": "#ffffff",
 	"android": {
 		"allowMixedContent": true,

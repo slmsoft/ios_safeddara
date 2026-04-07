@@ -172,6 +172,8 @@ node -v
 
 | Проблема | Что проверить |
 |----------|----------------|
+| `Could not find ... ./dist` при `npx cap sync ios` в **ios_safeddara** | После `git pull`: в корне репозитория `npm install`, затем `npx cap sync ios`. Веб берётся из **`App/App/public`** (см. `webDir` в `capacitor.config.json`). |
+| Xcode: **Missing package product 'CapApp-SPM'** | В корне **ios_safeddara** выполнить **`npm install`**. В Xcode: **File → Packages → Reset Package Caches**, потом **Resolve Package Versions** (или перезапустить Xcode). |
 | Пустой/старый экран в приложении | Снова выполнить `npm run build` и `npx cap sync ios` из **корня** веб-проекта. |
 | Ошибки подписи | Team, Bundle ID, действующий сертификат в **Signing & Capabilities**. |
 | «Version / build» отклонили в App Store | Увеличить **CURRENT_PROJECT_VERSION** в Xcode (целое число) и при необходимости **MARKETING_VERSION**. |
