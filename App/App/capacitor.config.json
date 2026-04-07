@@ -2,16 +2,35 @@
 	"appId": "tj.safeddara.app",
 	"appName": "Safeddara",
 	"webDir": "dist",
+	"backgroundColor": "#ffffff",
+	"android": {
+		"allowMixedContent": true,
+		"appendUserAgent": "SafeddaraNative/1.0",
+		"adjustMarginsForEdgeToEdge": "auto"
+	},
 	"ios": {
-		"path": "."
+		"contentInset": "automatic",
+		"allowsLinkPreview": false,
+		"preferredContentMode": "mobile",
+		"scrollEnabled": true
 	},
 	"plugins": {
 		"CapacitorHttp": {
 			"enabled": true
+		},
+		"SplashScreen": {
+			"launchShowDuration": 0,
+			"launchAutoHide": true,
+			"backgroundColor": "#ffffff",
+			"androidScaleType": "CENTER_CROP",
+			"showSpinner": false,
+			"splashFullScreen": true,
+			"splashImmersive": true
 		}
 	},
 	"packageClassList": [
 		"AppPlugin",
+		"CAPBrowserPlugin",
 		"DevicePlugin"
 	]
 }
