@@ -9,7 +9,7 @@
 		"adjustMarginsForEdgeToEdge": "auto"
 	},
 	"ios": {
-		"contentInset": "automatic",
+		"contentInset": "never",
 		"allowsLinkPreview": false,
 		"preferredContentMode": "mobile",
 		"scrollEnabled": true
