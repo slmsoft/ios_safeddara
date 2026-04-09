@@ -1,7 +1,7 @@
 {
   "appId": "tj.safeddara.app",
   "appName": "Safeddara",
-  "webDir": "App/App/public",
+  "webDir": "dist",
   "ios": {
     "path": "."
   },

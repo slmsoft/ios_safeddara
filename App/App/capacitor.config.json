@@ -1,18 +1,9 @@
 {
 	"appId": "tj.safeddara.app",
 	"appName": "Safeddara",
-	"webDir": "public",
-	"backgroundColor": "#ffffff",
-	"android": {
-		"allowMixedContent": true,
-		"appendUserAgent": "SafeddaraNative/1.0",
-		"adjustMarginsForEdgeToEdge": "auto"
-	},
+	"webDir": "dist",
 	"ios": {
-		"contentInset": "never",
-		"allowsLinkPreview": false,
-		"preferredContentMode": "mobile",
-		"scrollEnabled": true
+		"path": "."
 	},
 	"plugins": {
 		"CapacitorHttp": {
