@@ -6,6 +6,31 @@
 
 > **Важно:** для App Store собирается не «APK» (это Android), а **архив Xcode** → загрузка в **App Store Connect** (сборка **IPA** / TestFlight).
 
+### Только репозиторий [ios_safeddara](https://github.com/slmsoft/ios_safeddara) (для Xcode)
+
+Если весь фронт делается в **монорепозитории** с Vite, а в GitHub нужно попадать **только то, что относится к iOS** (чтобы потом открыть проект в Xcode из этого репозитория):
+
+1. В **корне монорепо** (где `src/`, `capacitor.config.json`, `package.json` с Vite):
+   ```bash
+   npm run ios:repo
+   ```
+   Это собирает `dist/` и выполняет `npx cap sync ios` — обновляются **`App/App/public`**, **`App/App/capacitor.config.json`**, **`App/CapApp-SPM/Package.swift`** (веб внутри оболочки + нативные плагины Capacitor).
+
+2. Коммит и push делайте **из папки `ios`** (это отдельный git с remote на `ios_safeddara`), а не из корня монорепо:
+   ```bash
+   cd ios
+   git add -A
+   git status
+   git commit -m "sync: веб-сборка для Xcode"
+   git push origin main
+   ```
+
+3. На Mac: клон [ios_safeddara](https://github.com/slmsoft/ios_safeddara.git) → в корне клона `npm install` → открыть **`App/App.xcodeproj`** в Xcode.
+
+Историю приложения (`src/`, Android и т.д.) при этом ведёте в основном репозитории; **ios_safeddara** остаётся снимком нативной оболочки + собранного `public` для сборки в Xcode.
+
+---
+
 ### Самый быстрый путь (уже есть Mac и Xcode)
 
 ```bash
